@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBurgundy</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:actionButtonStyle">@style/Theme.GGActionButton</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/Theme.GGOverflowButton</item>-->
+        <!-- set color of symbols in expanded searchview -->
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="searchViewStyle">@style/GGSearchViewStyle</item>
+    </style>
+
+    <!-- text -->
+    <style name="TextAppearance">
+        <!--font..-->
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- action button-->
+    <style name="Theme.GGActionButton" parent="@android:style/Widget.ActionButton">
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+    </style>
+
+    <!-- search view -->
+    <style name="GGSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@color/colorWhite</item>
+        <item name="submitBackground">@color/colorWhite</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <item name="searchIcon">@drawable/ic_search_black_24</item>
+        <item name="closeIcon">@drawable/ic_close_24</item>
+    </style>
+
+
+</resources>

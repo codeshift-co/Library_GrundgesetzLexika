@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GrundgesetzLexikaLibrary</string>
+    <string name="lexika">Lexika</string>
+    <string name="lexika_CAPS">LEXIKA</string>
+    <string name="lexikon">Lexikon</string>
+    <string name="lexikon_CAPS">LEXIKON</string>
+    <string name="suche">Suche</string>
+    <string name="suche_CAPS">SUCHE</string>
+    <string name="impressum">Impressum</string>
+    <string name="impressum_CAPS">IMPRESSUM</string>
+    <string name="bpb_logo_description">bpb Logo</string>
+    <string name="bpb">Bundeszentrale für politische Bildung</string>
+    <string name="fb_multimedia">Fachbereich Multimedia</string>
+    <string name="verantwortlich">Verantwortlich</string>
+    <string name="verantwortlicher">Thorsten Schilling</string>
+    <string name="redaktion_und_konzept">Redaktion und Konzept</string>
+    <string name="redaktionist_und_konzeptionist">Pamela Brandt</string>
+    <string name="kontakt">Kontakt</string>
+    <string name="tel">Tel: +49 (0)22899515&#8211;0</string>
+    <string name="fax">Fax: +49 (0)22899515&#8211;113</string>
+    <string name="email">E-Mail: info@bpb.de</string>
+    <string name="internet">Internet: www.bpb.de</string>
+    <string name="datenschutzerklaerung">Datenschutzerklärung</string>
+    <string name="datenschutzerklaerung_text">Die Nutzung der iPhone-App ist kostenfrei und ohne Angabe personenbezogener noch ortsbezogener Daten möglich. Es werden weder Daten innerhalb der Anwendung gespeichert noch Daten an Dritte weitergegeben.</string>
+    <string name="zurueck">zurück</string>
+    <string name="navigation">Navigation</string>
+    <string name="mehr_info">Mehr Info</string>
+    <string name="merken">Merken</string>
+    <string name="teilen">Teilen</string>
+    <string name="app_empfehlen">App empfehlen</string>
+</resources>

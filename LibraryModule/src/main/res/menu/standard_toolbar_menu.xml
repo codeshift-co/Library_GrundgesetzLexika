@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_impressum_item"
+        android:title="@string/impressum"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/toolbar_empfehlen_item"
+        android:title="@string/app_empfehlen"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/toolbar_search_item"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search_black_24"
+        android:title="@string/suche"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+</menu>

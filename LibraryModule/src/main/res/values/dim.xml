@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text -->
+    <dimen name="extra_small_text">10sp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="extra_large_text">72sp</dimen>
+
+    <!-- layout -->
+    <dimen name="layout_padding_right">16dp</dimen>
+    <dimen name="layout_padding_left">16dp</dimen>
+    <dimen name="layout_padding_top">16dp</dimen>
+    <dimen name="layout_padding_bottom">16dp</dimen>
+    <dimen name="layout_common_margin_half">8dp</dimen>
+    <dimen name="layout_common_margin">16dp</dimen>
+    <dimen name="layout_common_margin_doubled">32dp</dimen>
+    <dimen name="standard_title_image_height">226dp</dimen>
+
+    <!-- standardToolbar -->
+    <!-- tool_bar dimens are only for the comparison layout so that the actual standardToolbar distances
+    can be set properly-->
+    <dimen name="toolbar_padding_left">3dp</dimen>
+    <dimen name="tool_bar_padding_left">16dp</dimen>
+    <dimen name="toolbar_padding_right">10dp</dimen>
+    <dimen name="tool_bar_padding_right">28dp</dimen>
+    <dimen name="toolbar_icon_spacing">24dp</dimen>
+    <dimen name="toolbar_burger_margin">11dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">16dp</dimen>
+    <dimen name="action_button_min_width">24dp</dimen>
+    <dimen name="toolbar_artikel_detail_padding_right">10dp</dimen>
+
+    <!-- navigation drawer -->
+    <dimen name="nav_drawer_width">304dp</dimen>
+    <dimen name="nav_drawer_header_height">96dp</dimen>
+    <dimen name="nav_drawer_header_padding_left">16dp</dimen>
+    <dimen name="nav_drawer_header_padding_additional">13dp</dimen>
+    <dimen name="nav_drawer_header_anim_view_top_margin">20dp</dimen>
+    <dimen name="nav_drawer_header_anim_view_mutual_margin">4dp</dimen>
+    <dimen name="nav_drawer_header_anim_view_width">20dp</dimen>
+    <!-- drawer_width - padding_left - padding_right - view_width - padding_additional = -->
+    <dimen name="nav_drawer_header_anim_view_translation_x">241dp</dimen>
+    <dimen name="nav_drawer_header_anim_view_translation_y">19dp</dimen>
+    <dimen name="nav_drawer_header_anim_view_height">3dp</dimen>
+    <dimen name="nav_drawer_item_height">56dp</dimen>
+    <dimen name="nav_drawer_item_text_start_margin">72dp</dimen>
+    <dimen name="nav_drawer_item_padding">16dp</dimen>
+
+    <!-- drawables -->
+    <dimen name="stroke_thickness">1dp</dimen>
+    <dimen name="stroke_thickness_doubled">2dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="button_height">80dp</dimen>
+    <dimen name="button_height_small">60dp</dimen>
+    <dimen name="button_width">176dp</dimen>
+    <dimen name="button_width_large">368dp</dimen>
+    <dimen name="button_width_frage">140dp</dimen>
+    <dimen name="button_padding_left">20dp</dimen>
+    <dimen name="button_padding_top">13dp</dimen>
+    <dimen name="button_padding_right">20dp</dimen>
+    <dimen name="button_padding_bottom">10dp</dimen>
+    <dimen name="button_padding_left_large">156dp</dimen>
+    <dimen name="button_padding_right_large">163dp</dimen>
+    <dimen name="button_horizontal_padding_left">16dp</dimen>
+    <dimen name="button_horizontal_padding_right">24.5dp</dimen>
+    <dimen name="button_textLeft_padding">24dp</dimen>
+    <dimen name="button_verticalWithoutFrame_textPadding">6dp</dimen>
+    <dimen name="button_icon_padding">16dp</dimen>
+    <dimen name="bpb_logo_height">33dp</dimen>
+    <dimen name="bpb_logo_width">103dp</dimen>
+    <dimen name="horizontal_line_height_in_layout">2dp</dimen>
+
+    <!-- impressum -->
+    <dimen name="impressum_margin_top">24dp</dimen>
+    <dimen name="impressum_caption_margin_top">30dp</dimen>
+    <dimen name="impressum_fliesstext_margin_top">10dp</dimen>
+    <dimen name="impressum_padding_right">0dp</dimen>
+</resources>

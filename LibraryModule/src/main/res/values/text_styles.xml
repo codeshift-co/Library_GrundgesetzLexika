@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Grundgesetz.Text.Small" parent="TextAppearance">
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="Grundgesetz.Text.Default" parent="TextAppearance">
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="Grundgesetz.Text.Large" parent="TextAppearance">
+        <item name="android:textSize">@dimen/large_text</item>
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Title" parent="Grundgesetz.Text.Large">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Title_White" parent="Grundgesetz.Text.Large">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Untertitel_Caption" parent="Grundgesetz.Text.Small">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Button" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Caption_Quelle_ITALIC" parent="Grundgesetz.Text.Small">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Fliesstext" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Fliesstext_ITALIC" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Liste_Fliesstext_H2" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.Liste_Fliesstext_H2_White" parent="Grundgesetz.Text.Default">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.H1" parent="Grundgesetz.Text.Large">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.LexikonListLetter" parent="Grundgesetz.Text.Large">
+        <!-- Museo Slab 700  -->
+        <item name="android:textColor">@color/colorBurgundy</item>
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.ChapterList_ITALIC" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.ChapterTitle_MenuItem" parent="Grundgesetz.Text.Default">
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.TabMenu_VerticalButtonWithoutFrame" parent="Grundgesetz.Text.Default">
+        <item name="android:textSize">@dimen/extra_small_text</item>
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.TabMenu_BURGUNDY" parent="Grundgesetz.Text.Default">
+        <item name="android:textSize">@dimen/extra_small_text</item>
+        <item name="android:textColor">@color/colorBurgundy</item>
+    </style>
+
+    <!-- TODO setTypface -->
+    <style name="Grundgesetz.Text.AntwortZahl" parent="Grundgesetz.Text.Default">
+        <item  name="android:textSize">@dimen/extra_large_text</item>
+        <item name="android:textColor">@color/colorBurgundy</item>
+
+    </style>
+
+    <!-- TODO setTypface -->
+    <!-- !not specified in styling design! -->
+    <style name="Grundgesetz.Text.Menu_Title" parent="Grundgesetz.Text.Default">
+        <!-- Museo Slab 900  -->
+    </style>
+
+    <!-- TODO setTypface -->
+    <!-- !not specified in styling design! -->
+    <style name="Grundgesetz.Text.Menu_Title_WHITE" parent="Grundgesetz.Text.Default">
+        <!-- Museo Slab 900  -->
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+</resources>
