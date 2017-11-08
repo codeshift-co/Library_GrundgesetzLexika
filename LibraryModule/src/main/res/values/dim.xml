@@ -31,6 +31,15 @@
     <dimen name="action_button_min_width">24dp</dimen>
     <dimen name="toolbar_artikel_detail_padding_right">10dp</dimen>
 
+    <!-- lexikon -->
+    <dimen name="lexikon_list_item_divider_margin">6dp</dimen>
+    <dimen name="lexikon_list_item_divider_margin_half">3dp</dimen>
+    <dimen name="lexikon_list_item_text_margin">12dp</dimen>
+    <dimen name="lexikon_list_item_letter_margin">10dp</dimen>
+    <dimen name="lexikon_list_item_text_margin_left">32dp</dimen>
+    <dimen name="lexikon_list_margin_top">10dp</dimen>
+
+
     <!-- navigation drawer -->
     <dimen name="nav_drawer_width">304dp</dimen>
     <dimen name="nav_drawer_header_height">96dp</dimen>
@@ -71,6 +80,14 @@
     <dimen name="bpb_logo_height">33dp</dimen>
     <dimen name="bpb_logo_width">103dp</dimen>
     <dimen name="horizontal_line_height_in_layout">2dp</dimen>
+
+    <!-- artikel -->
+    <dimen name="artikel_padding_top">18dp</dimen>
+    <dimen name="artikel_padding_bottom">12dp</dimen>
+    <dimen name="artikel_button_margin">54dp</dimen>
+    <dimen name="artikel_header_margin_top">-61dp</dimen>
+    <dimen name="artikel_listview_margin_top">10dp</dimen>
+    <dimen name="artikel_empty_scroll_height">1000dp</dimen>
 
     <!-- impressum -->
     <dimen name="impressum_margin_top">24dp</dimen>

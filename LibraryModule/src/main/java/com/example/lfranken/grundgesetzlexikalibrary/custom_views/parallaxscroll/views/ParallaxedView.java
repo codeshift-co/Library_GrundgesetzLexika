@@ -1,4 +1,4 @@
-package com.example.lfranken.grundgesetzlexikalibrary.custom_views.views;
+package com.example.lfranken.grundgesetzlexikalibrary.custom_views.parallaxscroll.views;
 
 import android.annotation.SuppressLint;
 import android.graphics.Rect;
