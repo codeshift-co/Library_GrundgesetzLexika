@@ -30,4 +30,5 @@
     <string name="app_empfehlen">App empfehlen</string>
     <string name="siehe_auch">Siehe auch:</string>
     <string name="home">Home</string>
+    <string name="no_search_results">Die Suche hat leider keine Ergebnisse ergeben&#8230;</string>
 </resources>

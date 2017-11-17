@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- To make the space between the divider and the start and the end of screen white -->
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/colorWhite"/>
-        </shape>
-    </item>
     <!-- rectangle for divider at the bottom -->
-    <item android:left="@dimen/nav_drawer_item_padding" android:right="@dimen/nav_drawer_item_padding">
+    <item>
         <shape android:shape="rectangle">
             <stroke android:width="@dimen/stroke_thickness" android:color="@color/colorDivider"/>
             <padding
                 android:bottom="@dimen/stroke_thickness"/>
-
         </shape>
     </item>
     <!-- rectangle to hide the divider rectangle -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/colorWhite"/>
+            <solid android:color="@color/colorLightBurgundy"/>
         </shape>
     </item>
 </layer-list>

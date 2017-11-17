@@ -61,6 +61,7 @@
     <dimen name="stroke_thickness_doubled">2dp</dimen>
     <dimen name="corner_radius">8dp</dimen>
     <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_scrollbar">6dp</dimen>
     <dimen name="button_height">80dp</dimen>
     <dimen name="button_height_small">60dp</dimen>
     <dimen name="button_width">176dp</dimen>
@@ -80,6 +81,15 @@
     <dimen name="bpb_logo_height">33dp</dimen>
     <dimen name="bpb_logo_width">103dp</dimen>
     <dimen name="horizontal_line_height_in_layout">2dp</dimen>
+
+    <!-- scrollbar -->
+    <dimen name="scrollbar_size">5dp</dimen>
+    <dimen name="track_padding">2dp</dimen>
+
+    <!-- suche -->
+    <dimen name="suche_captionitem_padding_top">24dp</dimen>
+    <dimen name="suche_layout_padding_left">16dp</dimen>
+    <dimen name="suche_layout_padding_top">0dp</dimen>
 
     <!-- artikel -->
     <dimen name="artikel_padding_top">18dp</dimen>
