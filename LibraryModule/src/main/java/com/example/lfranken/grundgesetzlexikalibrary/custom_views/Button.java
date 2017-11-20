@@ -152,4 +152,10 @@ public class Button extends AppCompatButton {
         }
     }
 
+    public void setNewIconDrawable(Context context, int drawableId){
+        if (style.equals(HORIZONTAL)) setIconDrawable(context, drawableId, true);
+        else if (style.equals(VERTICAL) || style.equals(VERTICAL_WITHOUT_FRAME))
+            setIconDrawable(context, drawableId, false);
+    }
+
 }
