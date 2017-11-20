@@ -82,6 +82,16 @@
     <dimen name="bpb_logo_width">103dp</dimen>
     <dimen name="horizontal_line_height_in_layout">2dp</dimen>
 
+    <!-- list item -->
+    <dimen name="list_item_padding_right">16dp</dimen>
+    <dimen name="list_item_padding_left">16dp</dimen>
+    <dimen name="list_item_padding_top">16dp</dimen>
+    <dimen name="list_item_padding_bottom">24dp</dimen>
+    <dimen name="list_item_margin_top">8dp</dimen>
+    <dimen name="list_item_favorite_margin">7.5dp</dimen>
+    <dimen name="list_item_favorite_width">10dp</dimen>
+    <dimen name="list_item_favorite_height">11dp</dimen>
+
     <!-- scrollbar -->
     <dimen name="scrollbar_size">5dp</dimen>
     <dimen name="track_padding">2dp</dimen>
