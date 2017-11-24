@@ -33,4 +33,13 @@
     <string name="siehe_auch">Siehe auch:</string>
     <string name="home">Home</string>
     <string name="no_search_results">Die Suche hat leider keine Ergebnisse ergeben&#8230;</string>
+    <string name="no_internet_connection">Keine Internetverbindung</string>
+    <string name="no_internet_connection_standard_message">Du bist nicht mit dem Internet verbunden. Bitte verbinde dich mit dem Internet um fortzufahren.</string>
+    <string name="ok">Ok</string>
+    <string name="timeout">Timeout</string>
+    <string name="timeout_message">Leider gab es bei der Anfrage eine Zeitüberschreitung. Deine Verbindung ist wahrscheinlich zu langsam.</string>
+    <string name="hoppla">Hoppla</string>
+    <string name="something_went_wrong">Da ist leider etwas schief gelaufen:</string>
+    <string name="if_error_occures_further">Sollte dieser Fehler weiterhin auftreten, gib uns bitte bescheid.</string>
+    <string name="http_error_message">Es scheint einen Fehler beim Server zu geben. Bitte versuche es später erneut.</string>
 </resources>
