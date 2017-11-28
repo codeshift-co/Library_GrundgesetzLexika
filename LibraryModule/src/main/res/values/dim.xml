@@ -104,7 +104,7 @@
     <!-- artikel -->
     <dimen name="artikel_padding_top">18dp</dimen>
     <dimen name="artikel_padding_bottom">12dp</dimen>
-    <dimen name="artikel_button_margin">208dp</dimen>
+    <dimen name="artikel_button_margin">224dp</dimen>
     <dimen name="artikel_header_margin_top">-61dp</dimen>
     <dimen name="artikel_listview_margin_top">10dp</dimen>
     <dimen name="artikel_empty_scroll_height">1000dp</dimen>
