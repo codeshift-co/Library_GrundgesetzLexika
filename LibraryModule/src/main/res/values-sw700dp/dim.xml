@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text -->
+    <dimen name="extra_small_text">12sp</dimen>
+    <dimen name="small_text">14sp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="large_text">38sp</dimen>
+    <dimen name="extra_large_text">72sp</dimen>
+
+    <!-- layout -->
+    <dimen name="layout_padding_right">180dp</dimen>
+    <dimen name="layout_padding_left">180dp</dimen>
+    <dimen name="layout_padding_top">48dp</dimen>
+    <dimen name="layout_padding_bottom">23dp</dimen>
+    <dimen name="layout_common_margin_half">12dp</dimen>
+    <dimen name="layout_common_margin">24dp</dimen>
+    <dimen name="layout_common_margin_doubled">48dp</dimen>
+    <dimen name="layout_large_margin_bottom">30dp</dimen>
+
+    <!-- list item -->
+    <dimen name="list_item_padding_right">194dp</dimen>
+    <dimen name="list_item_padding_left">16dp</dimen>
+    <dimen name="list_item_padding_top">16dp</dimen>
+    <dimen name="list_item_padding_bottom">24dp</dimen>
+    <dimen name="list_item_margin_top">12dp</dimen>
+    <dimen name="list_item_favorite_margin">7.5dp</dimen>
+    <dimen name="list_item_favorite_width">10dp</dimen>
+    <dimen name="list_item_favorite_height">11dp</dimen>
+    <dimen name="list_item_favorite_margin_right">53dp</dimen>
+
+    <!-- lexikon -->
+    <dimen name="lexikon_list_item_divider_margin">6dp</dimen>
+    <dimen name="lexikon_list_item_divider_margin_half">3dp</dimen>
+    <dimen name="lexikon_list_item_text_margin">12dp</dimen>
+    <dimen name="lexikon_list_item_letter_margin">10dp</dimen>
+    <dimen name="lexikon_list_item_text_margin_left">54dp</dimen>
+    <dimen name="lexikon_list_margin_top">10dp</dimen>
+
+    <!-- drawables -->
+    <dimen name="stroke_thickness">1dp</dimen>
+    <dimen name="stroke_thickness_doubled">2dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="button_height">80dp</dimen>
+    <dimen name="button_height_small">60dp</dimen>
+    <dimen name="button_width">288dp</dimen>
+    <dimen name="button_width_large">600dp</dimen>
+    <dimen name="button_width_frage">140dp</dimen>
+    <dimen name="button_padding_left">24dp</dimen>
+    <dimen name="button_padding_top">26dp</dimen>
+    <dimen name="button_padding_right">29dp</dimen>
+    <dimen name="button_padding_bottom">26dp</dimen>
+    <dimen name="button_padding_left_large">156dp</dimen>
+    <dimen name="button_padding_right_large">163dp</dimen>
+    <dimen name="button_horizontal_padding_left">16dp</dimen>
+    <dimen name="button_horizontal_padding_right">24.5dp</dimen>
+    <dimen name="button_textLeft_padding">24dp</dimen>
+    <dimen name="button_verticalWithoutFrame_textPadding">6dp</dimen>
+    <dimen name="button_icon_padding">16dp</dimen>
+    <dimen name="bpb_logo_height">33dp</dimen>
+    <dimen name="bpb_logo_width">103dp</dimen>
+
+    <!-- standardToolbar -->
+    <dimen name="toolbar_padding_left">0dp</dimen>
+    <dimen name="toolbar_padding_right">27dp</dimen>
+    <dimen name="toolbar_icon_spacing">40dp</dimen>
+    <dimen name="toolbar_burger_margin">32dp</dimen>
+    <dimen name="toolbar_height">80dp</dimen>
+    <dimen name="toolbar_elevation">16dp</dimen>
+    <dimen name="action_button_min_width">75dp</dimen>
+    <dimen name="toolbar_artikel_detail_padding_right">15dp</dimen>
+
+    <!-- artikel -->
+    <dimen name="artikel_padding_top">18dp</dimen>
+    <dimen name="artikel_padding_bottom">12dp</dimen>
+    <dimen name="artikel_ib_margin">66dp</dimen>
+    <dimen name="artikel_header_margin_top">-89dp</dimen>
+    <dimen name="artikel_header_margin_horizontal">258dp</dimen>
+    <dimen name="artikel_listview_margin_top">10dp</dimen>
+    <dimen name="arikel_layout_spacing">22dp</dimen>
+    <dimen name="artikel_empty_scroll_height">1000dp</dimen>
+
+    <!-- navigation drawer -->
+    <dimen name="nav_drawer_width">320dp</dimen>
+    <dimen name="nav_drawer_header_height">88dp</dimen>
+    <dimen name="nav_drawer_header_padding_left">29dp</dimen>
+    <dimen name="nav_drawer_header_padding_right">13dp</dimen>
+    <dimen name="nav_drawer_item_height">56dp</dimen>
+    <dimen name="nav_drawer_item_text_start_margin">80dp</dimen>
+    <dimen name="nav_drawer_item_padding">24dp</dimen>
+
+    <!-- impressum -->
+    <dimen name="impressum_padding_right">258dp</dimen>
+    <dimen name="impressum_margin_top">24dp</dimen>
+    <dimen name="impressum_caption_margin_top">30dp</dimen>
+    <dimen name="impressum_fliesstext_margin_top">10dp</dimen>
+
+</resources>

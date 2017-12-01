@@ -42,4 +42,5 @@
     <string name="something_went_wrong">Da ist leider etwas schief gelaufen:</string>
     <string name="if_error_occures_further">Sollte dieser Fehler weiterhin auftreten, gib uns bitte bescheid.</string>
     <string name="http_error_message">Es scheint einen Fehler beim Server zu geben. Bitte versuche es später erneut.</string>
+    <string name="lexikon_eintrag_load_error">Der aufgerufene Lexikoneintrag scheint nicht zu existieren. Bitte versuche es später erneut.</string>
 </resources>

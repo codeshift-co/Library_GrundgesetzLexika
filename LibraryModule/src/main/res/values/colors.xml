@@ -8,4 +8,5 @@
     <color name="colorDivider">#1A961734</color>
     <color name="colorFullyTransparent">#00000000</color>
     <color name="colorDarkGrey">#29000000</color>
+    <color name="colorShadow">#35000000</color>
 </resources>
