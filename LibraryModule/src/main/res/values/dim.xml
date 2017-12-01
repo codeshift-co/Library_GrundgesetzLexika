@@ -16,6 +16,8 @@
     <dimen name="layout_common_margin">16dp</dimen>
     <dimen name="layout_common_margin_doubled">32dp</dimen>
     <dimen name="standard_title_image_height">226dp</dimen>
+    <dimen name="shadow_height">6dp</dimen>
+    <dimen name="shadow_height_negativ">-6dp</dimen>
 
     <!-- standardToolbar -->
     <!-- tool_bar dimens are only for the comparison layout so that the actual standardToolbar distances

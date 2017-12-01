@@ -15,9 +15,9 @@
         android:left="0dp"
         android:right="0dp"
         android:top="0dp"
-        android:bottom="10dp">
+        android:bottom="@dimen/shadow_height">
         <shape android:shape="rectangle">
-            <solid android:color="@color/colorWhite"/>
+            <solid android:color="@color/colorFullyTransparent"/>
             <corners android:radius="2dp" />
         </shape>
     </item>
