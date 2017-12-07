@@ -25,6 +25,7 @@ public class ExpandableTextView extends AppCompatTextView {
     private static final int MAX_COLLAPSED_LINES_DEFAULT = 2;
     private static final int MIN_COLLAPSED_LINES_DEFAULT = 1;
     private static final int ANIMATION_DURATION_DEFAULT = 250;
+    private static final int ANIMATION_DURATION_MINIMUM = 80;
 
     private int maxCollapsedLines;
     private int animationDuration;
@@ -168,6 +169,8 @@ public class ExpandableTextView extends AppCompatTextView {
         animationDuration = expansionLineDelta * 40;
         if (animationDuration > ANIMATION_DURATION_DEFAULT || animationDuration <= 0)
             animationDuration = ANIMATION_DURATION_DEFAULT;
+        else if (animationDuration < ANIMATION_DURATION_MINIMUM)
+            animationDuration = ANIMATION_DURATION_MINIMUM;
     }
 
     @Override
