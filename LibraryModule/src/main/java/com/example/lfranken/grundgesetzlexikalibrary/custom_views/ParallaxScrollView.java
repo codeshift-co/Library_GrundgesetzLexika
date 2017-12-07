@@ -23,6 +23,7 @@ public class ParallaxScrollView extends ScrollView {
     private float innerParallaxFactor;
     private int numberOfViewsToParallax;
     private View[] parallaxViews;
+    boolean numberOfViewsToParallaxHasChanged = false;
 
     public ParallaxScrollView(Context context) {
         super(context);
@@ -39,7 +40,7 @@ public class ParallaxScrollView extends ScrollView {
         init(context, attrs);
     }
 
-    private void init(Context context, AttributeSet attrs){
+    private void init(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ParallaxScrollView);
         parallaxFactor = typedArray.getFloat(R.styleable.ParallaxScrollView_parallaxFactor, PARALLAX_FACTOR_DEFAULT);
         innerParallaxFactor = typedArray.getFloat(R.styleable.ParallaxScrollView_innerParallaxFactor, INNER_PARALLAX_FACTOR_DEFAULT);
@@ -53,23 +54,24 @@ public class ParallaxScrollView extends ScrollView {
         saveParallaxViews();
     }
 
-    private void saveParallaxViews(){
+    private void saveParallaxViews() {
         if (getChildCount() <= 0 || !(getChildAt(0) instanceof ViewGroup)) return;
         ViewGroup viewGroup = (ViewGroup) getChildAt(0);
         int minNumberOfViewsToParallax = Math.min(this.numberOfViewsToParallax, viewGroup.getChildCount());
         parallaxViews = new View[minNumberOfViewsToParallax];
-        for (int i = 0; i < minNumberOfViewsToParallax; i++){
+        for (int i = 0; i < minNumberOfViewsToParallax; i++) {
             parallaxViews[i] = viewGroup.getChildAt(i);
         }
-
+        numberOfViewsToParallaxHasChanged = false;
     }
 
 
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
+        if (numberOfViewsToParallaxHasChanged) saveParallaxViews();
         if (parallaxViews == null || parallaxViews.length == 0) return;
-        int originalScrollY = Math.round(t/parallaxFactor);
+        int originalScrollY = Math.round(t / parallaxFactor);
         int lastScrollY = originalScrollY;
         float currentParallax = parallaxFactor;
         Rect clippingRect = new Rect();
@@ -78,15 +80,14 @@ public class ParallaxScrollView extends ScrollView {
         clippingRect.top = firstView.getTop();
         clippingRect.right = firstView.getRight();
         clippingRect.bottom = firstView.getBottom();
-        for (View parallaxView : parallaxViews){
-            scrollParallaxView(parallaxView, ((float)t / currentParallax), originalScrollY, lastScrollY, clippingRect);
+        for (View parallaxView : parallaxViews) {
+            scrollParallaxView(parallaxView, ((float) t / currentParallax), originalScrollY, lastScrollY, clippingRect);
             lastScrollY = originalScrollY;
             currentParallax *= innerParallaxFactor;
-
         }
     }
 
-    private void scrollParallaxView(View view, float offset, int originalScrollY, int lastScrollY, Rect clippingRect){
+    private void scrollParallaxView(View view, float offset, int originalScrollY, int lastScrollY, Rect clippingRect) {
         if (view == null) return;
         int delta = lastScrollY - originalScrollY;
         clippingRect.bottom += delta;
@@ -96,13 +97,8 @@ public class ParallaxScrollView extends ScrollView {
         else view.setVisibility(VISIBLE);
     }
 
-    /**
-     * sets the numberOfViewsToParallax programmatically
-     * !! ATTENTION !! for this method to have the desired effect it has to be called after your layout is inflated
-     * @param numberOfViewsToParallax
-     */
     public void setNumberOfViewsToParallax(int numberOfViewsToParallax) {
         this.numberOfViewsToParallax = numberOfViewsToParallax;
-        saveParallaxViews();
+        numberOfViewsToParallaxHasChanged = true;
     }
 }
