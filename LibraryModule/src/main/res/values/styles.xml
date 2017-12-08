@@ -23,6 +23,7 @@
     <!-- action button-->
     <style name="Theme.GGActionButton" parent="@android:style/Widget.ActionButton">
         <item name="android:minWidth">@dimen/action_button_min_width</item>
+
     </style>
 
     <!-- search view -->

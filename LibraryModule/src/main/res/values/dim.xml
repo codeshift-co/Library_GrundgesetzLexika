@@ -116,4 +116,9 @@
     <dimen name="impressum_caption_margin_top">30dp</dimen>
     <dimen name="impressum_fliesstext_margin_top">10dp</dimen>
     <dimen name="impressum_padding_right">0dp</dimen>
+
+    <!-- parallax modification -->
+    <item name="standard_parallaxFactor" format="float" type="dimen">1.3</item>
+    <item name="standard_innerParallaxFactor" format="float" type="dimen">1.7</item>
+
 </resources>
