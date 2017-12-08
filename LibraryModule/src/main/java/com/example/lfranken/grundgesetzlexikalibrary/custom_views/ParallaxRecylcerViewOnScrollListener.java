@@ -23,7 +23,7 @@ public class ParallaxRecylcerViewOnScrollListener extends RecyclerView.OnScrollL
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         super.onScrolled(recyclerView, dx, dy);
         View view = (usingOutsideView) ? this.view : recyclerView.getChildAt(0);
-        if (view != null && recyclerView.getChildAdapterPosition(view) == 0){
+        if (view != null && (usingOutsideView || recyclerView.getChildAdapterPosition(view) == 0)){
             view.setTranslationY(((float)-view.getTop()) / PARALLAX_FACTOR);
         }
     }
