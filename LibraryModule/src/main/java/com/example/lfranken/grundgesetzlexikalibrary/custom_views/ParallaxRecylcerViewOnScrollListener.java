@@ -7,23 +7,11 @@ public class ParallaxRecylcerViewOnScrollListener extends RecyclerView.OnScrollL
 
     private static final float PARALLAX_FACTOR = 2.5f;
 
-    private boolean usingOutsideView;
-    private View view;
-
-    public ParallaxRecylcerViewOnScrollListener(){
-        usingOutsideView = false;
-    }
-
-    public ParallaxRecylcerViewOnScrollListener(View view){
-        this.view = view;
-        usingOutsideView = true;
-    }
-
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         super.onScrolled(recyclerView, dx, dy);
-        View view = (usingOutsideView) ? this.view : recyclerView.getChildAt(0);
-        if (view != null && (usingOutsideView || recyclerView.getChildAdapterPosition(view) == 0)){
+        View view = recyclerView.getChildAt(0);
+        if (view != null &&  recyclerView.getChildAdapterPosition(view) == 0){
             view.setTranslationY(((float)-view.getTop()) / PARALLAX_FACTOR);
         }
     }
