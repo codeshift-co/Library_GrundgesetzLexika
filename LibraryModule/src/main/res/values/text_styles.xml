@@ -60,7 +60,6 @@
     </style>
 
     <style name="Grundgesetz.Text.ChapterList_ITALIC" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/roboto_italic</item>
         <item name="android:fontFamily">@font/roboto_italic</item>
     </style>
 
