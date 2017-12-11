@@ -13,87 +13,107 @@
     </style>
 
     <style name="Grundgesetz.Text.Title" parent="Grundgesetz.Text.Large">
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.Title_White" parent="Grundgesetz.Text.Large">
         <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.Untertitel_Caption" parent="Grundgesetz.Text.Small">
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.Button" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.Caption_Quelle_ITALIC" parent="Grundgesetz.Text.Small">
-        <item name="android:typeface">@font/roboto_italic</item>
+        <item name="android:font">@font/roboto_italic</item>
+        <item name="app:font">@font/roboto_italic</item>
     </style>
 
     <style name="Grundgesetz.Text.Fliesstext" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.Fliesstext_ITALIC" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/roboto_italic</item>
+        <item name="android:font">@font/roboto_italic</item>
+        <item name="app:font">@font/roboto_italic</item>
     </style>
 
     <style name="Grundgesetz.Text.Liste_Fliesstext_H2" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.Liste_Fliesstext_H2_White" parent="Grundgesetz.Text.Default">
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.H1" parent="Grundgesetz.Text.Large">
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.LexikonListLetter" parent="Grundgesetz.Text.Large">
         <item name="android:textColor">@color/colorBurgundy</item>
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <style name="Grundgesetz.Text.ChapterList_ITALIC" parent="Grundgesetz.Text.Default">
         <item name="android:typeface">@font/roboto_italic</item>
+        <item name="android:font">@font/roboto_italic</item>
+        <item name="app:font">@font/roboto_italic</item>
     </style>
 
     <style name="Grundgesetz.Text.ChapterTitle_MenuItem" parent="Grundgesetz.Text.Default">
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.TabMenu_VerticalButtonWithoutFrame" parent="Grundgesetz.Text.Default">
         <item name="android:textSize">@dimen/extra_small_text</item>
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.TabMenu_BURGUNDY" parent="Grundgesetz.Text.Default">
         <item name="android:textSize">@dimen/extra_small_text</item>
         <item name="android:textColor">@color/colorBurgundy</item>
-        <item name="android:typeface">@font/roboto_regular</item>
+        <item name="android:font">@font/roboto_regular</item>
+        <item name="app:font">@font/roboto_regular</item>
     </style>
 
     <style name="Grundgesetz.Text.AntwortZahl" parent="Grundgesetz.Text.Default">
         <item  name="android:textSize">@dimen/extra_large_text</item>
         <item name="android:textColor">@color/colorBurgundy</item>
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <!-- !not specified in styling design! -->
     <style name="Grundgesetz.Text.Menu_Title" parent="Grundgesetz.Text.Default">
         <!-- Museo Slab 900  -->
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
     <!-- !not specified in styling design! -->
     <style name="Grundgesetz.Text.Menu_Title_WHITE" parent="Grundgesetz.Text.Default">
         <!-- Museo Slab 900  -->
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:typeface">@font/robotoslab_bold</item>
+        <item name="android:font">@font/robotoslab_bold</item>
+        <item name="app:font">@font/robotoslab_bold</item>
     </style>
 
 </resources>
