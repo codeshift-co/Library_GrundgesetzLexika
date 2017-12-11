@@ -45,5 +45,6 @@
     <string name="lexikon_eintrag_load_error">Der aufgerufene Lexikoneintrag scheint nicht zu existieren. Bitte versuche es später erneut.</string>
     <string name="expand_collapse_icon_content_description">Auf- oder zusammenklappen Icon</string>
     <string name="kurz_gefasst_icon_content_description">Kurz gefasst Icon</string>
+    <string name="settings_error_message">Leider kannst du mit deinen momentanen Interneteinstellungen keine Verbindung zu den Servern herstellen.</string>
 
 </resources>
