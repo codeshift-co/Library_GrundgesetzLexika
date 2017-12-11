@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/colorWhite" />
-            <corners android:radius="@dimen/corner_radius_scrollbar" />
-            <padding
-                android:left="@dimen/track_padding"
-                android:right="@dimen/track_padding"/>
-        </shape>
-    </item>
-
-    <item>
+    <item android:left="@dimen/track_padding" android:right="@dimen/track_padding">
         <shape android:shape="rectangle">
             <solid android:color="@color/colorDarkGrey" />
             <corners android:radius="@dimen/corner_radius_scrollbar" />
+            <size android:width="@dimen/stroke_thickness"/>
         </shape>
     </item>
-
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorFullyTransparent"/>
+            <corners android:radius="@dimen/corner_radius_scrollbar" />
+            <size android:width="@dimen/scrollbar_size"/>
+        </shape>
+    </item>
 </layer-list>
