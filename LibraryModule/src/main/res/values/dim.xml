@@ -5,6 +5,7 @@
     <dimen name="small_text">12sp</dimen>
     <dimen name="medium_text">14sp</dimen>
     <dimen name="large_text">20sp</dimen>
+    <dimen name="app_title_text">20sp</dimen>
     <dimen name="extra_large_text">72sp</dimen>
 
     <!-- layout -->

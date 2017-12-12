@@ -12,13 +12,9 @@
         <item name="android:textSize">@dimen/large_text</item>
     </style>
 
-    <style name="Grundgesetz.Text.Title" parent="Grundgesetz.Text.Large">
+    <style name="Grundgesetz.Text.AppTitle" parent="Grundgesetz.Text.Large">
         <item name="android:fontFamily">@font/robotoslab_bold</item>
-    </style>
-
-    <style name="Grundgesetz.Text.Title_White" parent="Grundgesetz.Text.Large">
-        <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:fontFamily">@font/robotoslab_bold</item>
+        <item name="textSize">@dimen/app_title_text</item>
     </style>
 
     <style name="Grundgesetz.Text.Untertitel_Caption" parent="Grundgesetz.Text.Small">
@@ -54,6 +50,11 @@
         <item name="android:fontFamily">@font/robotoslab_bold</item>
     </style>
 
+    <style name="Grundgesetz.Text.H1_White" parent="Grundgesetz.Text.Large">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/robotoslab_bold</item>
+    </style>
+
     <style name="Grundgesetz.Text.LexikonListLetter" parent="Grundgesetz.Text.Large">
         <item name="android:textColor">@color/colorBurgundy</item>
         <item name="android:fontFamily">@font/robotoslab_bold</item>
@@ -84,17 +85,19 @@
         <item name="android:fontFamily">@font/robotoslab_bold</item>
     </style>
 
-    <!-- !not specified in styling design! -->
+    <!-- ! following styles are not specified in design! -->
     <style name="Grundgesetz.Text.Menu_Title" parent="Grundgesetz.Text.Default">
         <!-- Museo Slab 900  -->
         <item name="android:fontFamily">@font/robotoslab_bold</item>
     </style>
 
-    <!-- !not specified in styling design! -->
     <style name="Grundgesetz.Text.Menu_Title_WHITE" parent="Grundgesetz.Text.Default">
         <!-- Museo Slab 900  -->
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:fontFamily">@font/robotoslab_bold</item>
     </style>
 
+    <style name="Grundgesetz.Text.Clickable" parent="Grundgesetz.Text.Small">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
 </resources>
