@@ -24,6 +24,7 @@ public class Button extends AppCompatButton {
     private static final String HORIZONTAL_CENTER = "horizontal_center";
     private int drawableId = -1;
     private String style = TEXT;
+    private boolean smallText = false;
 
     public Button(Context context) {
         super(context);
@@ -56,18 +57,10 @@ public class Button extends AppCompatButton {
 
     private void handleAttributes(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.Button);
-        try {
-            int attr;
-            for (int i=0; i<typedArray.getIndexCount(); i++){
-                attr = typedArray.getIndex(i);
-                if (attr == R.styleable.Button_setIcon)
-                    drawableId = typedArray.getResourceId(attr, R.drawable.ic_lexikon_36);
-                if (attr == R.styleable.Button_setStyle)
-                    style = typedArray.getString(attr);
-            }
-        }
-        finally {typedArray.recycle();}
-        Log.d(TAG, "handleAttributes: got drawableId: " + drawableId);
+        drawableId = typedArray.getResourceId(R.styleable.Button_setIcon, R.drawable.ic_lexikon_36);
+        style = typedArray.getString(R.styleable.Button_setStyle);
+        smallText = typedArray.getBoolean(R.styleable.Button_smallText, false);
+        typedArray.recycle();
         setSpecificLayout(context, style, drawableId);
     }
 
@@ -139,7 +132,8 @@ public class Button extends AppCompatButton {
 
     private void setVerticalWithoutFrameLayout(Context context, int drawableId) {
         setBackgroundResource(R.drawable.button_without_frame);
-        setTextAppearance(context, R.style.Grundgesetz_Text_TabMenu_VerticalButtonWithoutFrame);
+        setTextAppearance(context, R.style.Grundgesetz_Text_Button);
+        if (smallText) setTextAppearance(context, R.style.Grundgesetz_Text_TabMenu_VerticalButtonWithoutFrame);
         setIconDrawable(context, drawableId, false);
         setGravity(Gravity.CENTER);
 //        setPadding(0,0,0,0);
@@ -150,8 +144,13 @@ public class Button extends AppCompatButton {
     private void setHorizontalWithoutFrameLayout(Context context, int drawableId){
         setBackgroundResource(R.drawable.button_without_frame);
         setTextAppearance(context, R.style.Grundgesetz_Text_Button);
-        setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
+        setPadding((int) getResources().getDimension(R.dimen.button_horizontal_padding_left),
+                0,
+                (int) getResources().getDimension(R.dimen.button_horizontal_padding_right),
+                0);
+        setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
         setIconDrawable(context, drawableId, true);
+        setCompoundDrawablePadding((int) getResources().getDimension(R.dimen.button_icon_padding));
     }
 
     private void setIconDrawable(Context context, int drawableId, boolean horizontal){
