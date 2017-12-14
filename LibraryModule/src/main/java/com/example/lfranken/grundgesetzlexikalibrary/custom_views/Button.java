@@ -142,7 +142,7 @@ public class Button extends AppCompatButton {
         setTextAppearance(context, R.style.Grundgesetz_Text_TabMenu_VerticalButtonWithoutFrame);
         setIconDrawable(context, drawableId, false);
         setGravity(Gravity.CENTER);
-        setPadding(0,0,0,0);
+//        setPadding(0,0,0,0);
         setCompoundDrawablePadding(
                 (int) getResources().getDimension(R.dimen.button_verticalWithoutFrame_textPadding));
     }
