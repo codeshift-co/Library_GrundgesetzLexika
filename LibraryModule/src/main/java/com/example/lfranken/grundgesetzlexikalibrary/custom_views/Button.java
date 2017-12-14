@@ -18,6 +18,7 @@ public class Button extends AppCompatButton {
     private static final String HORIZONTAL = "horizontal";
     private static final String VERTICAL = "vertical";
     private static final String VERTICAL_WITHOUT_FRAME = "vertical_without_frame";
+    private static final String HORIZONTAL_WITHOUT_FRAME = "horizontal_without_frame";
     private static final String TEXT = "text";
     private static final String TEXT_LEFT = "text_left";
     private static final String HORIZONTAL_CENTER = "horizontal_center";
@@ -94,6 +95,10 @@ public class Button extends AppCompatButton {
             case VERTICAL_WITHOUT_FRAME:
                 setVerticalWithoutFrameLayout(context, drawableId);
                 break;
+            case HORIZONTAL_WITHOUT_FRAME:
+            default:
+                setHorizontalWithoutFrameLayout(context, drawableId);
+
         }
     }
 
@@ -140,7 +145,13 @@ public class Button extends AppCompatButton {
         setPadding(0,0,0,0);
         setCompoundDrawablePadding(
                 (int) getResources().getDimension(R.dimen.button_verticalWithoutFrame_textPadding));
+    }
 
+    private void setHorizontalWithoutFrameLayout(Context context, int drawableId){
+        setBackgroundResource(R.drawable.button_without_frame);
+        setTextAppearance(context, R.style.Grundgesetz_Text_Button);
+        setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
+        setIconDrawable(context, drawableId, true);
     }
 
     private void setIconDrawable(Context context, int drawableId, boolean horizontal){

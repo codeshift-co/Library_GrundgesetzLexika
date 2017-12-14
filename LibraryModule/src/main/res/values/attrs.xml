@@ -14,4 +14,18 @@
         <attr name="innerParallaxFactor" format="float"/>
         <attr name="numberOfViewsToParallax" format="integer"/>
     </declare-styleable>
+
+    <declare-styleable name="CornerTriangleView">
+        <attr name="corner" format="enum">
+            <enum name="upLeft" value="0"/>
+            <enum name="upRight" value="1"/>
+            <enum name="downRight" value="2"/>
+            <enum name="downLeft" value="3"/>
+        </attr>
+        <attr name="start_color" format="color"/>
+        <attr name="end_color" format="color"/>
+        <attr name="alpha" format="float"/>
+        <attr name="height_factor" format="float"/>
+        <attr name="width_factor" format="float"/>
+    </declare-styleable>
 </resources>
