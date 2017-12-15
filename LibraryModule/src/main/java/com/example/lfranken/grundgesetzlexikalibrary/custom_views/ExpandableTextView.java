@@ -129,10 +129,10 @@ public class ExpandableTextView extends AppCompatTextView {
     public synchronized void toggle() {
         if (currentlyAnimating || expansionListener == null) return;
         if (!expansionListener.shouldExpandableTextViewExpand()) {
-            rotateExpansionArrow(false);
+            rotateExpansionArrow();
             collapse();
         } else {
-            rotateExpansionArrow(true);
+            rotateExpansionArrow();
             expand();
         }
     }
@@ -189,9 +189,9 @@ public class ExpandableTextView extends AppCompatTextView {
             super.setText(text, type);
     }
 
-    private void rotateExpansionArrow(boolean expand) {
+    private void rotateExpansionArrow() {
         if (rotationArrow == null) return;
-        if (expand)
+        if (expansionListener.isItemExpanded())
             rotationArrow.animate().rotation(270);
         else if (expansionListener.getMaxExpandLines() > maxCollapsedLines)
             rotationArrow.animate().rotation(90);
