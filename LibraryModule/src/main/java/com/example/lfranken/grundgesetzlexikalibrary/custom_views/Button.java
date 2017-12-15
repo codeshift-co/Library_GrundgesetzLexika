@@ -56,7 +56,7 @@ public class Button extends AppCompatButton {
     private void handleAttributes(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.Button);
         int drawableId = typedArray.getResourceId(R.styleable.Button_setIcon, R.drawable.ic_lexikon_36);
-        style = typedArray.getInt(R.styleable.Button_setStyle, 0);
+        style = typedArray.getInt(R.styleable.Button_setStyle, HORIZONTAL);
         smallText = typedArray.getBoolean(R.styleable.Button_smallText, false);
         typedArray.recycle();
         setSpecificLayout(context, style, drawableId);
@@ -86,6 +86,7 @@ public class Button extends AppCompatButton {
                         (int) getResources().getDimension(R.dimen.button_padding_top),
                         (int) getResources().getDimension(R.dimen.button_padding_right_large),
                         (int) getResources().getDimension(R.dimen.button_padding_bottom));
+                break;
             case TEXT_LEFT:
                 setTextLeftLayout(context);
                 break;
