@@ -100,6 +100,7 @@ public class ExpandableTextView extends AppCompatTextView {
          * ETV is inflated again if it was expanded and scrolled out of and back to the screen or if
          * we return to the fragment otherwise the first collapse has no effect.
          */
+        rotateExpansionArrow();
         if (!expansionListener.isItemExpanded() && !currentlyAnimating) {
             if (expansionListener.getMaxExpandLines() <= 0) {
                 post(() -> {
@@ -114,16 +115,9 @@ public class ExpandableTextView extends AppCompatTextView {
 
     private void handleAttributes(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableTextView);
-        try {
-            int attr;
-            for (int i = 0; i < typedArray.getIndexCount(); i++) {
-                attr = typedArray.getIndex(i);
-                if (attr == R.styleable.ExpandableTextView_setMaxCollapsedLines)
-                    maxCollapsedLines = typedArray.getInteger(attr, MAX_COLLAPSED_LINES_DEFAULT);
-            }
-        } finally {
-            typedArray.recycle();
-        }
+        maxCollapsedLines = typedArray.getInteger(R.styleable.ExpandableTextView_setMaxCollapsedLines, MAX_COLLAPSED_LINES_DEFAULT);
+        typedArray.recycle();
+
     }
 
     public synchronized void toggle() {
