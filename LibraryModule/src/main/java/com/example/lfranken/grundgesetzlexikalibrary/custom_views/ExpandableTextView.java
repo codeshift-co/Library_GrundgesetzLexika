@@ -37,8 +37,11 @@ public class ExpandableTextView extends AppCompatTextView {
 
     public interface ExpansionListener {
         boolean shouldExpandableTextViewExpand();
+
         boolean isItemExpanded();
+
         void setMaxExpandLines(int maxExpandLines);
+
         int getMaxExpandLines();
     }
 
@@ -117,7 +120,6 @@ public class ExpandableTextView extends AppCompatTextView {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableTextView);
         maxCollapsedLines = typedArray.getInteger(R.styleable.ExpandableTextView_setMaxCollapsedLines, MAX_COLLAPSED_LINES_DEFAULT);
         typedArray.recycle();
-
     }
 
     public synchronized void toggle() {
@@ -159,10 +161,9 @@ public class ExpandableTextView extends AppCompatTextView {
         if (expansionListener.getMaxExpandLines() <= maxCollapsedLines)
             expansionListener.setMaxExpandLines(getLineCount());
         setAnimationDurationBasedOnMaxExpandedLines();
-
     }
 
-    private void setAnimationDurationBasedOnMaxExpandedLines(){
+    private void setAnimationDurationBasedOnMaxExpandedLines() {
         int expansionLineDelta = expansionListener.getMaxExpandLines() - maxCollapsedLines;
         animationDuration = expansionLineDelta * 40;
         if (animationDuration > ANIMATION_DURATION_DEFAULT || animationDuration <= 0)

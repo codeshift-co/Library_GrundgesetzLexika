@@ -78,6 +78,7 @@
     <dimen name="artikel_ib_margin">66dp</dimen>
     <dimen name="artikel_header_margin_top">-89dp</dimen>
     <dimen name="artikel_header_margin_horizontal">258dp</dimen>
+    <dimen name="artikel_button_margin">86dp</dimen>
     <dimen name="artikel_listview_margin_top">10dp</dimen>
     <dimen name="arikel_layout_spacing">22dp</dimen>
     <dimen name="artikel_empty_scroll_height">1000dp</dimen>
