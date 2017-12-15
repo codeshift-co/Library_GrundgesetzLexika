@@ -97,4 +97,6 @@
     <dimen name="impressum_caption_margin_top">30dp</dimen>
     <dimen name="impressum_fliesstext_margin_top">10dp</dimen>
 
+    <!-- corner triangle view -->
+    <item name="height_factor_smaller_triangle" format="float" type="dimen">0.6666</item>
 </resources>
