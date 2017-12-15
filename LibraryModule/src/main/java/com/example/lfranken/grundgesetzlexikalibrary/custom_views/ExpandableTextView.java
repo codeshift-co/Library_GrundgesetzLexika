@@ -9,6 +9,7 @@ import android.support.v7.widget.AppCompatTextView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.View;
 
 import com.example.lfranken.grundgesetzlexikalibrary.R;
 
@@ -32,6 +33,7 @@ public class ExpandableTextView extends AppCompatTextView {
     private ExpansionListener expansionListener;
     private boolean currentlyAnimating = false;
     private Animator.AnimatorListener animatorListener;
+    private View rotationArrow;
 
     public interface ExpansionListener {
         boolean shouldExpandableTextViewExpand();
@@ -127,8 +129,10 @@ public class ExpandableTextView extends AppCompatTextView {
     public synchronized void toggle() {
         if (currentlyAnimating || expansionListener == null) return;
         if (!expansionListener.shouldExpandableTextViewExpand()) {
+            rotateExpansionArrow(false);
             collapse();
         } else {
+            rotateExpansionArrow(true);
             expand();
         }
     }
@@ -183,5 +187,17 @@ public class ExpandableTextView extends AppCompatTextView {
     public void setText(CharSequence text, BufferType type) {
         if (text != null)
             super.setText(text, type);
+    }
+
+    private void rotateExpansionArrow(boolean expand) {
+        if (rotationArrow == null) return;
+        if (expand)
+            rotationArrow.animate().rotation(270);
+        else if (expansionListener.getMaxExpandLines() > maxCollapsedLines)
+            rotationArrow.animate().rotation(90);
+    }
+
+    public void setRotationArrow(View rotationArrow) {
+        this.rotationArrow = rotationArrow;
     }
 }
