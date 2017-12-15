@@ -2,7 +2,16 @@
 <resources>
     <declare-styleable name="Button">
         <attr name="setIcon" format="reference" />
-        <attr name="setStyle" format="string" />
+        <attr name="setStyle" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+            <enum name="vertical_without_frame" value="2"/>
+            <enum name="horizontal_without_frame" value="3"/>
+            <enum name="text" value="4"/>
+            <enum name="text_left" value="5"/>
+            <enum name="horizontal_center" value="6"/>
+            <enum name="horizontal_center_without_frame" value="7"/>
+        </attr>
         <attr name="smallText" format="boolean" />
     </declare-styleable>
 

@@ -7,23 +7,21 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatDrawableManager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 
 import com.example.lfranken.grundgesetzlexikalibrary.R;
 
 public class Button extends AppCompatButton {
-    public static final String TAG = Button.class.getSimpleName();
 
-    private static final String HORIZONTAL = "horizontal";
-    private static final String VERTICAL = "vertical";
-    private static final String VERTICAL_WITHOUT_FRAME = "vertical_without_frame";
-    private static final String HORIZONTAL_WITHOUT_FRAME = "horizontal_without_frame";
-    private static final String TEXT = "text";
-    private static final String TEXT_LEFT = "text_left";
-    private static final String HORIZONTAL_CENTER = "horizontal_center";
-    private int drawableId = -1;
-    private String style = TEXT;
+    private static final int HORIZONTAL = 0;
+    private static final int VERTICAL = 1;
+    private static final int VERTICAL_WITHOUT_FRAME = 2;
+    private static final int HORIZONTAL_WITHOUT_FRAME = 3;
+    private static final int TEXT = 4;
+    private static final int TEXT_LEFT = 5;
+    private static final int HORIZONTAL_CENTER = 6;
+    private static final int HORIZONTAL_CENTER_WITHOUT_FRAME= 7;
+    private int style = TEXT;
     private boolean smallText = false;
 
     public Button(Context context) {
@@ -40,11 +38,11 @@ public class Button extends AppCompatButton {
     }
 
     protected void initView(Context context, AttributeSet attrs) {
-        setStandardLayout(context);
+        setStandardLayout();
         handleAttributes(context, attrs);
     }
 
-    private void setStandardLayout(Context context){
+    private void setStandardLayout(){
         setBackgroundResource(R.drawable.button);
         setAllCaps(false);
         setPadding((int) getResources().getDimension(R.dimen.button_padding_left),
@@ -57,14 +55,14 @@ public class Button extends AppCompatButton {
 
     private void handleAttributes(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.Button);
-        drawableId = typedArray.getResourceId(R.styleable.Button_setIcon, R.drawable.ic_lexikon_36);
-        style = typedArray.getString(R.styleable.Button_setStyle);
+        int drawableId = typedArray.getResourceId(R.styleable.Button_setIcon, R.drawable.ic_lexikon_36);
+        style = typedArray.getInt(R.styleable.Button_setStyle, 0);
         smallText = typedArray.getBoolean(R.styleable.Button_smallText, false);
         typedArray.recycle();
         setSpecificLayout(context, style, drawableId);
     }
 
-    private void setSpecificLayout(Context context, String style, int drawableId) {
+    private void setSpecificLayout(Context context, int style, int drawableId) {
         switch (style){
             case HORIZONTAL:
                 setHorizontalLayout(context,drawableId);
@@ -82,6 +80,12 @@ public class Button extends AppCompatButton {
                         (int) getResources().getDimension(R.dimen.button_padding_right_large),
                         (int) getResources().getDimension(R.dimen.button_padding_bottom));
                 break;
+            case HORIZONTAL_CENTER_WITHOUT_FRAME:
+                setHorizontalWithoutFrameLayout(context, drawableId);
+                setPadding((int) getResources().getDimension(R.dimen.button_padding_left_large),
+                        (int) getResources().getDimension(R.dimen.button_padding_top),
+                        (int) getResources().getDimension(R.dimen.button_padding_right_large),
+                        (int) getResources().getDimension(R.dimen.button_padding_bottom));
             case TEXT_LEFT:
                 setTextLeftLayout(context);
                 break;
@@ -163,8 +167,8 @@ public class Button extends AppCompatButton {
     }
 
     public void setNewIconDrawable(Context context, int drawableId){
-        if (style.equals(HORIZONTAL)) setIconDrawable(context, drawableId, true);
-        else if (style.equals(VERTICAL) || style.equals(VERTICAL_WITHOUT_FRAME))
+        if (style == HORIZONTAL) setIconDrawable(context, drawableId, true);
+        else if (style == VERTICAL || style == VERTICAL_WITHOUT_FRAME)
             setIconDrawable(context, drawableId, false);
     }
 
