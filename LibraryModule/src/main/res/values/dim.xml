@@ -125,4 +125,7 @@
     <!-- corner triangle view -->
     <item name="height_factor_smaller_triangle" format="float" type="dimen">0.5</item>
 
+    <!-- ems for toolbar title length -->
+    <item name="toolbar_title_length_ems" format="integer" type="dimen">10</item>
+
 </resources>
