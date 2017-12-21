@@ -21,16 +21,10 @@
     <dimen name="shadow_height_negativ">-6dp</dimen>
 
     <!-- standardToolbar -->
-    <!-- tool_bar dimens are only for the comparison layout so that the actual standardToolbar distances
-    can be set properly-->
     <dimen name="toolbar_padding_left">3dp</dimen>
-    <dimen name="tool_bar_padding_left">16dp</dimen>
     <dimen name="toolbar_padding_right">10dp</dimen>
-    <dimen name="tool_bar_padding_right">28dp</dimen>
-    <dimen name="toolbar_icon_spacing">24dp</dimen>
     <dimen name="toolbar_burger_margin">11dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
-    <dimen name="toolbar_elevation">16dp</dimen>
     <dimen name="action_button_min_width">24dp</dimen>
     <dimen name="toolbar_artikel_detail_padding_right">10dp</dimen>
 
@@ -45,24 +39,12 @@
 
     <!-- navigation drawer -->
     <dimen name="nav_drawer_width">304dp</dimen>
-    <dimen name="nav_drawer_header_height">96dp</dimen>
-    <dimen name="nav_drawer_header_padding_left">16dp</dimen>
-    <dimen name="nav_drawer_header_padding_additional">13dp</dimen>
-    <dimen name="nav_drawer_header_anim_view_top_margin">20dp</dimen>
-    <dimen name="nav_drawer_header_anim_view_mutual_margin">4dp</dimen>
-    <dimen name="nav_drawer_header_anim_view_width">20dp</dimen>
-    <!-- drawer_width - padding_left - padding_right - view_width - padding_additional = -->
-    <dimen name="nav_drawer_header_anim_view_translation_x">241dp</dimen>
-    <dimen name="nav_drawer_header_anim_view_translation_y">19dp</dimen>
-    <dimen name="nav_drawer_header_anim_view_height">3dp</dimen>
     <dimen name="nav_drawer_item_height">56dp</dimen>
     <dimen name="nav_drawer_item_text_start_margin">72dp</dimen>
     <dimen name="nav_drawer_item_padding">16dp</dimen>
 
     <!-- drawables -->
     <dimen name="stroke_thickness">1dp</dimen>
-    <dimen name="stroke_thickness_doubled">2dp</dimen>
-    <dimen name="corner_radius">8dp</dimen>
     <dimen name="corner_radius_small">4dp</dimen>
     <dimen name="corner_radius_scrollbar">6dp</dimen>
     <dimen name="button_height">80dp</dimen>
@@ -101,7 +83,6 @@
 
     <!-- suche -->
     <dimen name="suche_captionitem_padding_top">24dp</dimen>
-    <dimen name="suche_layout_padding_left">16dp</dimen>
     <dimen name="suche_layout_padding_top">0dp</dimen>
 
     <!-- artikel -->
@@ -109,8 +90,6 @@
     <dimen name="artikel_padding_bottom">12dp</dimen>
     <dimen name="artikel_button_margin">54dp</dimen>
     <dimen name="artikel_header_margin_top">-61dp</dimen>
-    <dimen name="artikel_listview_margin_top">10dp</dimen>
-    <dimen name="artikel_empty_scroll_height">1000dp</dimen>
 
     <!-- impressum -->
     <dimen name="impressum_margin_top">24dp</dimen>
@@ -124,8 +103,5 @@
 
     <!-- corner triangle view -->
     <item name="height_factor_smaller_triangle" format="float" type="dimen">0.5</item>
-
-    <!-- ems for toolbar title length -->
-    <item name="toolbar_title_length_ems" format="integer" type="dimen">10</item>
 
 </resources>
