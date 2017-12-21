@@ -45,6 +45,9 @@ public class GGLLinkMovementMethod extends LinkMovementMethod {
                     notifyListeners(urlSpanUnderTouch.getURL());
                 unHighlightUrl(textView);
                 break;
+            case MotionEvent.ACTION_CANCEL:
+                unHighlightUrl(textView);
+                return false;
         }
 
         return touchStartedOverALink;
