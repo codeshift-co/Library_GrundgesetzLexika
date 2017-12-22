@@ -87,17 +87,17 @@ public class ParallaxScrollView extends ScrollView {
 
     private void initClippingRect(Rect clippingRect, View view){
         if (clippingRect == null || view == null) return;
-        if (isTablet){
-            clippingRect.left = view.getBottom();
-            clippingRect.top = view.getLeft();
-            clippingRect.right = view.getTop();
-            clippingRect.bottom = view.getRight();
-        } else {
+//        if (isTablet){
+//            clippingRect.left = view.getBottom();
+//            clippingRect.top = view.getLeft();
+//            clippingRect.right = view.getTop();
+//            clippingRect.bottom = view.getRight();
+//        } else {
             clippingRect.left = view.getLeft();
             clippingRect.top = view.getTop();
             clippingRect.right = view.getRight();
             clippingRect.bottom = view.getBottom();
-        }
+//        }
     }
 
     private void scrollParallaxView(View view, float offset, int originalScrollY, int lastScrollY, Rect clippingRect) {
