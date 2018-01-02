@@ -71,34 +71,16 @@ public class ParallaxScrollView extends ScrollView {
         super.onScrollChanged(l, t, oldl, oldt);
         if (numberOfViewsToParallaxHasChanged) saveParallaxViews();
         if (parallaxViews == null || parallaxViews.length == 0) return;
-        int originalScrollY = Math.round(t / parallaxFactor);
-        int lastScrollY = originalScrollY;
         float currentParallax = parallaxFactor;
         for (View parallaxView : parallaxViews) {
-            Rect clippingRect = new Rect();
-            initClippingRect(clippingRect, parallaxView);
-            scrollParallaxView(parallaxView, ((float) t / currentParallax), originalScrollY, lastScrollY, clippingRect);
-            lastScrollY = originalScrollY;
+            scrollParallaxView(parallaxView, ((float) t / currentParallax));
             currentParallax *= innerParallaxFactor;
         }
     }
 
-    private void initClippingRect(Rect clippingRect, View view) {
-        if (clippingRect == null || view == null) return;
-        clippingRect.left = view.getLeft();
-        clippingRect.top = view.getTop();
-        clippingRect.right = view.getRight();
-        clippingRect.bottom = view.getBottom();
-    }
-
-    private void scrollParallaxView(View view, float offset, int originalScrollY, int lastScrollY, Rect clippingRect) {
+    private void scrollParallaxView(View view, float offset) {
         if (view == null) return;
-        int delta = lastScrollY - originalScrollY;
-        clippingRect.bottom += delta;
         view.setTranslationY(Math.round(offset));
-        view.setClipBounds(clippingRect);
-        if (clippingRect.bottom <= clippingRect.top) view.setVisibility(INVISIBLE);
-        else view.setVisibility(VISIBLE);
     }
 
     public void setNumberOfViewsToParallax(int numberOfViewsToParallax) {
