@@ -23,7 +23,6 @@
         <attr name="parallaxFactor" format="float" />
         <attr name="innerParallaxFactor" format="float" />
         <attr name="numberOfViewsToParallax" format="integer" />
-        <attr name="isTablet" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="CornerTriangleView">

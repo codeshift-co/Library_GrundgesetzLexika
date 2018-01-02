@@ -24,7 +24,6 @@ public class ParallaxScrollView extends ScrollView {
     private int numberOfViewsToParallax;
     private View[] parallaxViews;
     private boolean numberOfViewsToParallaxHasChanged = false;
-    private boolean isTablet = false;
 
     public ParallaxScrollView(Context context) {
         super(context);
@@ -46,7 +45,6 @@ public class ParallaxScrollView extends ScrollView {
         parallaxFactor = typedArray.getFloat(R.styleable.ParallaxScrollView_parallaxFactor, PARALLAX_FACTOR_DEFAULT);
         innerParallaxFactor = typedArray.getFloat(R.styleable.ParallaxScrollView_innerParallaxFactor, INNER_PARALLAX_FACTOR_DEFAULT);
         numberOfViewsToParallax = typedArray.getInt(R.styleable.ParallaxScrollView_numberOfViewsToParallax, NUMBER_OF_VIEWS_TO_PARALLAX);
-        isTablet = typedArray.getBoolean(R.styleable.ParallaxScrollView_isTablet, false);
         typedArray.recycle();
     }
 
@@ -76,28 +74,21 @@ public class ParallaxScrollView extends ScrollView {
         int originalScrollY = Math.round(t / parallaxFactor);
         int lastScrollY = originalScrollY;
         float currentParallax = parallaxFactor;
-        Rect clippingRect = new Rect();
-        initClippingRect(clippingRect, parallaxViews[0]);
         for (View parallaxView : parallaxViews) {
+            Rect clippingRect = new Rect();
+            initClippingRect(clippingRect, parallaxView);
             scrollParallaxView(parallaxView, ((float) t / currentParallax), originalScrollY, lastScrollY, clippingRect);
             lastScrollY = originalScrollY;
             currentParallax *= innerParallaxFactor;
         }
     }
 
-    private void initClippingRect(Rect clippingRect, View view){
+    private void initClippingRect(Rect clippingRect, View view) {
         if (clippingRect == null || view == null) return;
-//        if (isTablet){
-//            clippingRect.left = view.getBottom();
-//            clippingRect.top = view.getLeft();
-//            clippingRect.right = view.getTop();
-//            clippingRect.bottom = view.getRight();
-//        } else {
-            clippingRect.left = view.getLeft();
-            clippingRect.top = view.getTop();
-            clippingRect.right = view.getRight();
-            clippingRect.bottom = view.getBottom();
-//        }
+        clippingRect.left = view.getLeft();
+        clippingRect.top = view.getTop();
+        clippingRect.right = view.getRight();
+        clippingRect.bottom = view.getBottom();
     }
 
     private void scrollParallaxView(View view, float offset, int originalScrollY, int lastScrollY, Rect clippingRect) {
