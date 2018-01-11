@@ -11,6 +11,7 @@
     <string name="impressum">Impressum</string>
     <string name="impressum_CAPS">IMPRESSUM</string>
     <string name="bpb_logo_description">bpb Logo</string>
+    <string name="herausgeber">Herausgeber</string>
     <string name="bpb">Bundeszentrale für politische Bildung</string>
     <string name="fb_multimedia">Fachbereich Multimedia</string>
     <string name="verantwortlich">Verantwortlich</string>
@@ -34,17 +35,18 @@
     <string name="home">Home</string>
     <string name="no_search_results">Die Suche hat leider keine Ergebnisse ergeben&#8230;</string>
     <string name="no_internet_connection">Keine Internetverbindung</string>
-    <string name="no_internet_connection_standard_message">Du bist nicht mit dem Internet verbunden. Bitte verbinde dich mit dem Internet um fortzufahren.</string>
+    <string name="no_internet_connection_standard_message">Sie sind nicht mit dem Internet verbunden. Bitte verbinden Sie sich mit dem Internet um fortzufahren.</string>
     <string name="ok">OK</string>
     <string name="timeout">Timeout</string>
-    <string name="timeout_message">Leider gab es bei der Anfrage eine Zeitüberschreitung. Deine Verbindung ist wahrscheinlich zu langsam oder der Server braucht zu lange um zu antworten.</string>
+    <string name="timeout_message">Leider gab es bei der Anfrage eine Zeitüberschreitung. Ihre Verbindung ist im Moment wahrscheinlich zu langsam oder der Server braucht zu lange um zu antworten.</string>
     <string name="hoppla">Hoppla</string>
     <string name="something_went_wrong">Da ist leider etwas schief gelaufen:</string>
-    <string name="if_error_occurs_further">Sollte dieser Fehler weiterhin auftreten, gib uns bitte bescheid.</string>
-    <string name="http_error_message">Die Server sind leider momentan nicht zu erreichen. Bitte versuche es später erneut.</string>
-    <string name="lexikon_eintrag_load_error">Der aufgerufene Lexikoneintrag scheint nicht zu existieren. Bitte versuche es später erneut.</string>
+    <string name="if_error_occurs_further">Sollte dieser Fehler weiterhin auftreten, geben Sie uns bitte bescheid.</string>
+    <string name="http_error_message">Die Server sind leider momentan nicht zu erreichen. Bitte versuchen Sie es später erneut.</string>
+    <string name="lexikon_eintrag_load_error">Der aufgerufene Lexikoneintrag scheint nicht zu existieren. Bitte versuchen Sie es später erneut.</string>
     <string name="expand_collapse_icon_content_description">Auf- oder zusammenklappen Icon</string>
     <string name="kurz_gefasst_icon_content_description">Kurz gefasst Icon</string>
-    <string name="settings_error_message">Leider kannst du mit deinen momentanen Interneteinstellungen keine Verbindung zu den Servern herstellen.</string>
+    <string name="settings_error_message">Leider könne Sie mit ihren momentanen Interneteinstellungen keine Verbindung zu den Servern herstellen.</string>
+    <string name="bild_zum_lexikon">Bild zum Lexikon</string>
 
 </resources>
