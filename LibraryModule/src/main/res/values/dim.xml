@@ -61,7 +61,7 @@
     <dimen name="button_padding_right_large">163dp</dimen>
     <dimen name="button_horizontal_padding_left">16dp</dimen>
     <dimen name="button_horizontal_padding_right">24.5dp</dimen>
-    <dimen name="button_textLeft_padding">24dp</dimen>
+    <dimen name="button_textLeft_padding">16dp</dimen>
     <dimen name="button_verticalWithoutFrame_textPadding">6dp</dimen>
     <dimen name="button_icon_padding">16dp</dimen>
     <dimen name="bpb_logo_height">33dp</dimen>
