@@ -49,7 +49,6 @@ public class GGLLinkMovementMethod extends LinkMovementMethod {
                 unHighlightUrl(textView);
                 return false;
         }
-
         return touchStartedOverALink;
     }
 
@@ -126,6 +125,6 @@ public class GGLLinkMovementMethod extends LinkMovementMethod {
     }
 
     public static void removeAllListeners() {
-        listeners = new ArrayList<>();
+        listeners.clear();
     }
 }
