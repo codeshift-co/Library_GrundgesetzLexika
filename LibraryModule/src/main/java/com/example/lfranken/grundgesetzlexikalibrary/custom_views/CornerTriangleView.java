@@ -81,7 +81,7 @@ public class CornerTriangleView extends View {
         switch (corner){
             case UP_LEFT:
                 a = new Point(0, 0);
-                b = new Point(width, 0);
+                b = new Point(getShiftedX(width, widthFactor, false), 0);
                 c = new Point(0, height);
                 x0 = y0 = x1 = 0;
                 y1 = height;
@@ -89,7 +89,7 @@ public class CornerTriangleView extends View {
             case UP_RIGHT:
                 a = new Point(getWidth(), 0);
                 b = new Point(getWidth(), height);
-                c = new Point(getCXForUpRight(width, widthFactor), 0);
+                c = new Point(getShiftedX(width, widthFactor, true), 0);
                 x0 = y0 = 0;
                 x1 = width;
                 y1 = height;
@@ -118,9 +118,9 @@ public class CornerTriangleView extends View {
         return trianglePath;
     }
 
-    private int getCXForUpRight(int width, float widthFactor){
+    private int getShiftedX(int width, float widthFactor, boolean negative){
         if (widthFactor <= 1) return 0;
-        return Math.round(-(widthFactor-1) * width);
+        int neg = (negative ? -1 : 1);
+        return Math.round(neg*(widthFactor-1) * width);
     }
-
 }
