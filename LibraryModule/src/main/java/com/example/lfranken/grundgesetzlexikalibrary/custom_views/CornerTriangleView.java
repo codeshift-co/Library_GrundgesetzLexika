@@ -120,7 +120,7 @@ public class CornerTriangleView extends View {
 
     private int getCXForUpRight(int width, float widthFactor){
         if (widthFactor <= 1) return 0;
-        return Math.round((widthFactor-1) * width);
+        return Math.round(-(widthFactor-1) * width);
     }
 
 }
