@@ -89,7 +89,7 @@ public class CornerTriangleView extends View {
             case UP_RIGHT:
                 a = new Point(width, 0);
                 b = new Point(width, height);
-                c = new Point(0, 0);
+                c = new Point(getCXForUpRight(width, widthFactor), 0);
                 x0 = y0 = 0;
                 x1 = width;
                 y1 = height;
@@ -116,6 +116,11 @@ public class CornerTriangleView extends View {
         trianglePath.lineTo(b.x, b.y);
         trianglePath.lineTo(c.x, c.y);
         return trianglePath;
+    }
+
+    private int getCXForUpRight(int width, float widthFactor){
+        if (widthFactor <= 1) return 0;
+        return Math.round((widthFactor-1) * width);
     }
 
 }
