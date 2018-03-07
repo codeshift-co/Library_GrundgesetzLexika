@@ -87,8 +87,8 @@ public class CornerTriangleView extends View {
                 y1 = height;
                 break;
             case UP_RIGHT:
-                a = new Point(width, 0);
-                b = new Point(width, height);
+                a = new Point(getWidth(), 0);
+                b = new Point(getWidth(), height);
                 c = new Point(getCXForUpRight(width, widthFactor), 0);
                 x0 = y0 = 0;
                 x1 = width;
