@@ -14,6 +14,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class is added to a TextView to find out if a link has been clicked, highlight the link and
+ * notify the listeners
+ */
 public class GGLLinkMovementMethod extends LinkMovementMethod {
 
     public interface GGLLinkMovementMethodListener {
