@@ -15,10 +15,6 @@ import android.view.View;
 
 import com.example.lfranken.grundgesetzlexikalibrary.R;
 
-/**
- * Created by lfranken on 14.12.2017.
- */
-
 public class CornerTriangleView extends View {
 
     private static final int UP_LEFT = 0;
