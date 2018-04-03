@@ -8,23 +8,29 @@
     <string name="gemerkt_CAPS">GEMERKT</string>
     <string name="suche">\u0020Suche</string>
     <string name="suche_CAPS">SUCHE</string>
+    <!--impressum-->
     <string name="impressum">Impressum</string>
     <string name="impressum_CAPS">IMPRESSUM</string>
     <string name="bpb_logo_description">bpb Logo</string>
     <string name="herausgeber">Herausgeber</string>
-    <string name="bpb">Bundeszentrale für politische Bildung</string>
-    <string name="fb_multimedia">Fachbereich Multimedia</string>
-    <string name="verantwortlich">Verantwortlich</string>
-    <string name="verantwortlicher">Thorsten Schilling</string>
-    <string name="redaktion_und_konzept">Redaktion und Konzept</string>
-    <string name="redaktionist_und_konzeptionist">Pamela Brandt</string>
+    <string name="bpb">Bundeszentrale für politische Bildung/bpb, Bonn © 2018</string>
+    <string name="verantwortlich">Verantwortlich gemäß § 55 RStV: Thorsten Schilling</string>
+    <string name="projektleitung">Projektleitung</string>
+    <string name="projekleiter">Pamela Brandt</string>
     <string name="kontakt">Kontakt</string>
+    <string name="strasse">Adenauerallee 86</string>
+    <string name="pstlz_stadt">53113 Bonn</string>
     <string name="tel">Tel: +49 (0)22899515&#8211;0</string>
     <string name="fax">Fax: +49 (0)22899515&#8211;113</string>
     <string name="email">E-Mail: info@bpb.de</string>
     <string name="internet">Internet: www.bpb.de</string>
+    <string name="konzept_design_prgrammierung">Konzept, Design und Programmierung</string>
+    <string name="dreipc">3pc GmbH Neue Kommunikation, Berlin</string>
     <string name="datenschutzerklaerung">Datenschutzerklärung</string>
-    <string name="datenschutzerklaerung_text">Die Nutzung der iPhone-App ist kostenfrei und ohne Angabe personenbezogener noch ortsbezogener Daten möglich. Es werden weder Daten innerhalb der Anwendung gespeichert noch Daten an Dritte weitergegeben.</string>
+    <string name="datenschutzerklaerung_text">Die Nutzung der App ist kostenfrei und ohne Angabe personenbezogener oder ortsbezogener Daten möglich. Es werden werder Daten innerhalb der Anwendung gespeichert noch Daten an Dritte weitergegeben.</string>
+    <string name="datenschutzerklaerung_fragen">Wenn Sie Fragen haben, die diese Datenschutzerklärung nicht beantworten konnte, wenn Sie zu einem Punkt weitere Informationen haben möchten oder Anregungen oder Kommentare haben, können Sie sich gern direkt per E-Mail an die Datenschutzbeauftragte der Bundeszentrale für politische Bildung wenden: diehl@bpb.de.</string>
+    <string name="datenschutzerklaerung_datum">Bonn, den xx.xx.2018</string>
+
     <string name="zurueck">zurück</string>
     <string name="navigation">Navigation</string>
     <string name="mehr_info">Mehr Info</string>
