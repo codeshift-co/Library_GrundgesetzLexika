@@ -54,5 +54,6 @@
     <string name="kurz_gefasst_icon_content_description">Kurz gefasst Icon</string>
     <string name="settings_error_message">Leider könne Sie mit Ihren momentanen Interneteinstellungen keine Verbindung zu den Servern herstellen.</string>
     <string name="bild_zum_lexikon">Bild zum Lexikon</string>
+    <string name="datenschutz">Datenschutz</string>
 
 </resources>

@@ -10,6 +10,10 @@
         android:title="@string/app_empfehlen"
         app:showAsAction="never" />
     <item
+        android:id="@+id/toolbar_datenschutz_item"
+        android:title="@string/datenschutz"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/toolbar_search_item"
         android:icon="@drawable/ic_search_black_24"
         android:title="@string/suche"
