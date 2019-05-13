@@ -47,7 +47,7 @@
     <string name="timeout_message">Leider gab es bei der Anfrage eine Zeitüberschreitung. Ihre Verbindung ist im Moment wahrscheinlich zu langsam oder der Server braucht zu lange um zu antworten.</string>
     <string name="hoppla">Hoppla</string>
     <string name="something_went_wrong">Da ist leider etwas schief gelaufen:</string>
-    <string name="if_error_occurs_further">Sollte dieser Fehler weiterhin auftreten, geben Sie uns bitte bescheid.</string>
+    <string name="if_error_occurs_further">Sollte dieser Fehler weiterhin auftreten, geben Sie uns bitte Bescheid.</string>
     <string name="http_error_message">Die Server sind leider momentan nicht zu erreichen. Bitte versuchen Sie es später erneut.</string>
     <string name="lexikon_eintrag_load_error">Der aufgerufene Lexikoneintrag scheint nicht zu existieren. Bitte versuchen Sie es später erneut.</string>
     <string name="expand_collapse_icon_content_description">Auf- oder zusammenklappen Icon</string>
